@@ -1,3 +1,46 @@
+# Supernova MGU Analysis
+
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ## Overview
+
+This project focuses on the cleaning and preparation of a supernova dataset obtained by Supernova MGU. The goal is to transform the raw data into a clean and structured format suitable for creating insightful visualizations using Tableau.
+
+## Goals
+
+The primary objectives of this project include:
+
+- **Loading and Inspecting the Data:** Utilizing Python and the pandas library to load the dataset and understand its initial structure and contents.
+- **Data Cleaning:** Identifying and handling any inconsistencies, missing values (though none were found in this dataset), and irrelevant information. This included the removal of the `vlookup for column P` column.
+- **Column Renaming:** Applying more descriptive and Tableau-friendly names to the columns, avoiding abbreviations and acronyms for better clarity.
+- **Data Preparation for Visualization:** Saving the cleaned and transformed data into a CSV file (`supernova_cleaned.csv`) for seamless import into Tableau.
+
+## Files Included
+
+- `analyze_llm_results.py`: The Python script containing the code used for loading, cleaning, and preparing the supernova dataset.
+- `supernova_cleaned.csv`: The resulting cleaned dataset in CSV format, ready for Tableau.
+- `Supernova-no-duplicates-dataset.xlsx`: The original raw dataset in Excel format.
+- `README.md`: This file, providing an overview and documentation for the project.
+- `.gitignore`: Specifies intentionally untracked files that Git should ignore (e.g., virtual environment files).
+
+## How to Use
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/Yuhc19/Supernova-MGU.git](https://github.com/Yuhc19/Supernova-MGU.git)
+    cd Supernova-MGU
+    ```
+2.  **Ensure Dependencies:** Make sure you have Python 3 installed. It's recommended to use a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On macOS/Linux
+    . venv/Scripts/activate  # On Windows PowerShell
+    pip install pandas openpyxl
+    ```
+3.  **Run the Data Cleaning Script:**
+    ```bash
+    python analyze_llm_results.py
+    ```
+    This script will:
+    - Load the `Supernova-no-duplicates-dataset.xlsx` file
 - Premium analysis data cleaning log - raw_data.csv
 
 1. Applied conditional formatting, alternating colors.
