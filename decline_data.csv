@@ -1,0 +1,340 @@
+insured_address_state,Category,rejection,rejection_log
+Ontario,Mfg./Proc.,0,[]
+Ontario,,0,[]
+Ontario,Hospitality,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,,1,"[{""fus_grade"": ""9""}]"
+Ontario,Recreation,1,"[{""ibc_code"": ""7992""}]"
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Alberta,,1,"[{""provincial_restriction"": ""T5M3V9""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,Hospitality,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,B&P Services,0,[]
+Ontario,Wholesale,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Retail,1,"[{""ibc_code"": ""5513""}, {""ibc_code"": ""5513""}]"
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Realty,1,"[{""decline_uw_rule"": ""2.0""}]"
+Ontario,Health Serv.,1,"[{""ibc_code"": ""8080""}, {""ibc_code"": ""8080""}]"
+Ontario,Health Serv.,0,[]
+Ontario,Recreation,0,[]
+Ontario,Retail,1,"[{""ibc_code"": ""5512""}, {""ibc_code"": ""5512""}]"
+Ontario,Health Serv.,0,[]
+Ontario,C. E. & I.,1,"[{""ibc_code"": ""1743""}]"
+Ontario,B&P Services,0,[]
+Ontario,Education,1,"[{""ibc_code"": ""8322""}, {""ibc_code"": ""8322""}]"
+Ontario,B&P Services,0,[]
+Ontario,Wholesale,1,"[{""ibc_code"": ""2060""}, {""ibc_code"": ""2060""}]"
+Ontario,Retail,0,[]
+Ontario,C. E. & I.,1,"[{""ibc_code"": ""1776""}, {""ibc_code"": ""1776""}]"
+Ontario,Recreation,1,"[{""ibc_code"": ""7931""}, {""ibc_code"": ""7931""}]"
+Ontario,Health Serv.,0,[]
+Ontario,B&P Services,1,"[{""ibc_code"": ""7400""}]"
+Ontario,B&P Services,0,[]
+Ontario,Member Org.,0,[]
+Ontario,B&P Services,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,Realty,1,"[{""ibc_code"": ""3892""}, {""ibc_code"": ""3892""}]"
+Ontario,Transport,0,[]
+Ontario,B&P Services,1,"[{""ibc_code"": ""8948""}, {""ibc_code"": ""8948""}]"
+Ontario,B&P Services,1,"[{""ibc_code"": ""3594""}]"
+Ontario,Health Serv.,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,C. E. & I.,0,[]
+Ontario,Utilities,1,"[{""ibc_code"": ""4811""}, {""ibc_code"": ""4811""}]"
+Ontario,B&P Services,0,[]
+Ontario,C. E. & I.,0,[]
+Ontario,Retail,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,1,"[{""ibc_code"": ""7032""}, {""ibc_code"": ""7032""}]"
+Ontario,Education,1,"[{""ibc_code"": ""8322""}, {""ibc_code"": ""8322""}]"
+Ontario,Wholesale,0,[]
+Ontario,Retail,0,[]
+Ontario,Education,0,[]
+Ontario,Retail,0,[]
+Ontario,B&P Services,1,"[{""ibc_code"": ""7393""}, {""ibc_code"": ""7393""}]"
+Ontario,B&P Services,1,"[{""ibc_code"": ""1830""}, {""ibc_code"": ""1830""}]"
+Ontario,Member Org.,1,"[{""ibc_code"": ""8671""}, {""ibc_code"": ""8671""}]"
+Ontario,Retail,0,[]
+Ontario,,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Health Serv.,0,[]
+Ontario,Health Serv.,0,[]
+Ontario,Wholesale,0,[]
+Ontario,C. E. & I.,1,"[{""ibc_code"": ""1712""}, {""ibc_code"": ""1712""}]"
+Ontario,Retail,1,"[{""ibc_code"": ""5421""}]"
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,1,"[{""ibc_code"": ""5514""}]"
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Wholesale,1,"[{""ibc_code"": ""5162""}]"
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,,1,"[{""ibc_code"": ""5014""}]"
+Ontario,C. E. & I.,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,Recreation,1,"[{""ibc_code"": ""7811""}, {""ibc_code"": ""7811""}]"
+Ontario,B&P Services,1,"[{""ibc_code"": ""8913""}, {""ibc_code"": ""8913""}]"
+Ontario,Hospitality,0,[]
+Ontario,C. E. & I.,0,[]
+Ontario,C. E. & I.,0,[]
+Ontario,Hospitality,1,"[{""ibc_code"": ""6632""}, {""ibc_code"": ""6632""}]"
+Ontario,C. E. & I.,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Member Org.,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Utilities,0,[]
+Ontario,Recreation,1,"[{""ibc_code"": ""7811""}, {""ibc_code"": ""7811""}]"
+Québec,,1,"[{""mga_provincial_restriction"": ""H2R2N3""}, {""provincial_restriction"": ""H2R2N3""}]"
+Ontario,C. E. & I.,1,"[{""ibc_code"": ""1754""}]"
+Ontario,Hospitality,1,"[{""ibc_code"": ""5812""}]"
+Ontario,Hospitality,1,"[{""ibc_code"": ""5812""}]"
+Ontario,Hospitality,0,[]
+Ontario,Realty,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Realty,1,"[{""ibc_code"": ""3891""}, {""ibc_code"": ""3891""}]"
+Ontario,B&P Services,1,"[{""ibc_code"": ""7393""}, {""ibc_code"": ""7393""}]"
+Ontario,Retail,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Recreation,1,"[{""ibc_code"": ""7937""}]"
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Retail,0,[]
+Newfoundland and Labrador,,1,"[{""mga_provincial_restriction"": ""A0K2X0""}, {""provincial_restriction"": ""A0K2X0""}]"
+Ontario,B&P Services,0,[]
+Ontario,Wholesale,0,[]
+Ontario,B&P Services,1,"[{""ibc_code"": ""8304""}, {""ibc_code"": ""8304""}]"
+Ontario,C. E. & I.,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Transport,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Wholesale,0,[]
+Ontario,,1,"[{""ibc_code"": ""730""}, {""ibc_code"": ""730""}]"
+New Brunswick,,1,"[{""mga_provincial_restriction"": ""E3B9M1""}, {""provincial_restriction"": ""E3B9M1""}]"
+Ontario,B&P Services,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Retail,0,[]
+Ontario,Realty,0,[]
+Ontario,Transport,0,[]
+Ontario,Retail,0,[]
+Ontario,Wholesale,1,"[{""ibc_code"": ""5991""}]"
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,C. E. & I.,1,"[{""ibc_code"": ""1512""}, {""ibc_code"": ""1512""}]"
+Ontario,B&P Services,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Retail,0,[]
+Ontario,Health Serv.,0,[]
+Ontario,Wholesale,0,[]
+Ontario,B&P Services,0,[]
+Ontario,C. E. & I.,1,"[{""ibc_code"": ""1712""}, {""ibc_code"": ""1712""}]"
+Ontario,C. E. & I.,1,"[{""ibc_code"": ""1712""}, {""ibc_code"": ""1712""}]"
+Ontario,Retail,0,[]
+Ontario,Retail,1,"[{""ibc_code"": ""5433""}]"
+Ontario,Hospitality,1,"[{""ibc_code"": ""5812""}]"
+Ontario,Hospitality,1,"[{""ibc_code"": ""5812""}]"
+Ontario,Recreation,1,"[{""ibc_code"": ""7938""}]"
+Ontario,Retail,0,[]
+Alberta,,1,"[{""provincial_restriction"": ""T6N0A8""}]"
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,B&P Services,1,"[{""ibc_code"": ""1521""}]"
+Ontario,Mfg./Proc.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Retail,0,[]
+New Brunswick,,1,"[{""mga_provincial_restriction"": ""E2E4M9""}]"
+Ontario,Wholesale,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Wholesale,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,Mfg./Proc.,1,"[{""ibc_code"": ""2043""}]"
+Ontario,Mfg./Proc.,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,Hospitality,0,[]
+Ontario,C. E. & I.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,,1,"[{""fus_grade"": ""10""}]"
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,C. E. & I.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,,0,[]
+Ontario,,1,"[{""fus_grade"": ""9""}]"
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,,0,[]
+Ontario,Utilities,0,[]
+Ontario,,1,"[{""fus_grade"": ""9""}]"
+Ontario,C. E. & I.,0,[]
+Ontario,C. E. & I.,0,[]
+Ontario,,1,"[{""fus_grade"": ""10""}]"
+Ontario,C. E. & I.,0,[]
+Ontario,,1,"[{""fus_grade"": ""8""}]"
+Ontario,Retail,0,[]
+Ontario,,1,"[{""fus_grade"": ""10""}]"
+Ontario,Recreation,0,[]
+Ontario,,1,"[{""fus_grade"": ""9""}]"
+Ontario,Wholesale,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Wholesale,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,Retail,0,[]
+Ontario,,1,"[{""fus_grade"": ""9""}]"
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Wholesale,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,B&P Services,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,B&P Services,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,,0,[]
+Ontario,B&P Services,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Recreation,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Retail,0,[]
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Wholesale,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,Wholesale,0,[]
+Ontario,Wholesale,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,Wholesale,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,Wholesale,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,Wholesale,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""2.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,Mfg./Proc.,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,C. E. & I.,1,"[{""decline_uw_rule"": ""2.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""1.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,Mfg./Proc.,0,[]
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,,1,"[{""decline_uw_rule"": ""3.0""}]"
+Ontario,Retail,0,[]
+Ontario,Hospitality,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Health Serv.,1,"[{""ibc_code"": ""3590""}]"
+Ontario,Hospitality,0,[]
+Ontario,Wholesale,1,"[{""ibc_code"": ""5257""}]"
+Ontario,Wholesale,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,B&P Services,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Mfg./Proc.,0,[]
+Ontario,Hospitality,0,[]
+Ontario,Mfg./Proc.,0,[]
