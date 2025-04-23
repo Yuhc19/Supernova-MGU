@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load the Excel file
+# Loading the Excel file
 try:
     df = pd.read_excel('Supernova-no-duplicates-dataset.xlsx')
     print("Supernova dataset loaded successfully:")
@@ -15,46 +15,46 @@ df.info()
 print("\nDescriptive Statistics:")
 print(df.describe(include='all'))
 
-# Check unique values in 'insured_address_state'
+# Checking unique values in 'insured_address_state'
 print("\nUnique values in 'insured_address_state':")
 print(df['insured_address_state'].unique())
 
-# Check unique values in 'Category'
+# Checking unique values in 'Category'
 print("\nUnique values in 'Category':")
 print(df['Category'].unique())
 
-# Delete the 'vlookup for column P' column
+# Deleted the 'vlookup for column P' column
 df = df.drop(columns=['vlookup for column P'])
 
-# Print the updated DataFrame info to confirm the column is gone
+# Printed the updated DataFrame info to confirm the column is gone
 print("\nDataFrame Info after deleting 'vlookup for column P':")
 df.info()
 
-# Print the first few rows of the updated DataFrame
+# Printed the first few rows of the updated DataFrame
 print("\nFirst 5 rows after deleting the column:")
 print(df.head())
 
 print("\nAll Remaining Column Names:")
 print(df.columns.tolist())
 
-# Print all column names for review
+# Printed all column names for review
 print("\nAll Remaining Column Names (Again):")
 print(df.columns.tolist())
 
-# Trim whitespace from object (string) columns
+# Trimmed whitespace from object (string) columns
 object_cols = df.select_dtypes(include='object').columns
 for col in object_cols:
     df[col] = df[col].str.strip()
     print(f"Whitespace trimmed from column: {col}")
 
-# Print the unique values of the object columns again to confirm
+# Printed the unique values of the object columns again to confirm
 print("\nUnique values in 'insured_address_state' after trimming:")
 print(df['insured_address_state'].unique())
 
 print("\nUnique values in 'Category' after trimming:")
 print(df['Category'].unique())
 
-# Rename columns for better readability in Tableau (no abbreviations or acronyms)
+# Renameed columns for better readability in Tableau (no abbreviations or acronyms)
 df = df.rename(columns={
     'insured_address_state': 'Insured Address State/Province',
     'input_gl_revenue': 'General Liability Revenue (Input)',
@@ -80,14 +80,14 @@ df = df.rename(columns={
     'output_premium_total_total_prem': 'Total Premium (Output)'
 })
 
-# Print the updated column names
+# Printed the updated column names
 print("\nUpdated Column Names (No Abbreviations):")
 print(df.columns.tolist())
 
-# Print the first few rows with the new column names
+# Printed the first few rows with the new column names
 print("\nFirst 5 rows with updated column names (No Abbreviations):")
 print(df.head())
 
-# Save the cleaned DataFrame to a CSV file
+# Saved the cleaned DataFrame to a CSV file
 df.to_csv('supernova_cleaned.csv', index=False)
 print("\nCleaned data saved to supernova_cleaned.csv")
