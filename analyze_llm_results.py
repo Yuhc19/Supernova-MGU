@@ -37,12 +37,25 @@ def extract_data(row):
 if 'data' in df.columns:
     df[['answer_value', 'answer_reasoning', 'url', 'bbb_rating']] = df.apply(extract_data, axis=1)
 
-    # Print the first few rows with the new columns
-    print("\nDataFrame with parsed 'data' column (including 'url' and 'bbb_rating'):")
+    # Rename the columns
+    df = df.rename(columns={
+        'Name': 'CompanyName',
+        'Address': 'CompanyAddress',
+        'Phone': 'CompanyPhone',
+        'category': 'Category',
+        'data': 'RawData',
+        'answer_value': 'AnswerValue',
+        'answer_reasoning': 'AnswerReasoning',
+        'url': 'URL',
+        'bbb_rating': 'BBBRating'
+    })
+
+    # Print the first few rows with the new column names
+    print("\nDataFrame with renamed columns:")
     print(df.head())
 
     # Save the updated DataFrame to a new CSV file
     df.to_csv('llm_results_parsed.csv', index=False)
-    print("\nDataFrame saved to llm_results_parsed.csv")
+    print("\nDataFrame saved to llm_results_parsed.csv with renamed columns")
 else:
     print("\nError: 'data' column not found in llm_results_processed.csv")
