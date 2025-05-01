@@ -100,7 +100,56 @@ Instructions:
 
 
 
+# Supernova MGU - LLM Results Analysis and Accuracy Verification
 
+This README outlines the steps taken to process and analyze data involving LLM-generated results for Supernova MGU. The goal was to clean the initial dataset, parse information from a specific 'data' column containing JSON, manually verify the accuracy of the LLM outputs, and finally, perform an initial analysis of surcharges and discounts.
+
+## Project Steps
+
+### 1. Initial Data Cleaning and Preparation (`analyze_llm_results.py` - Initial Version)
+
+1.  **Loading the Dataset:** The initial dataset (`Supernova-no-duplicates-dataset.xlsx`) was loaded using the pandas library in Python.
+2.  **Column Removal:** The column 'vlookup for column P' was removed as it was deemed irrelevant.
+3.  **Column Renaming:** Several columns with abbreviations and acronyms were renamed to be more descriptive and Tableau-friendly (e.g., 'insured_address_state' to 'Insured Address State/Province').
+4.  **Saving Cleaned Data:** The cleaned and renamed data was saved to a CSV file (`supernova_cleaned.csv`).
+5.  **GitHub Repository Initialization:** A new public GitHub repository named 'Supernova-MGU' was created, and the local project files were initialized as a Git repository using `git init`.
+6.  **Committing and Pushing:** The initial project files (Python script, cleaned CSV, etc.) were committed and pushed to the 'Supernova-MGU' repository on GitHub.
+
+### 2. Parsing the LLM Results (`analyze_llm_results.py` - Parsing Version)
+
+1.  **Loading LLM Results:** A new CSV file containing LLM processed results (`llm_results_processed.csv`) was loaded using pandas.
+2.  **Parsing the 'data' Column:** A Python function (`extract_data`) was created to parse the JSON strings within the 'data' column. This function extracted:
+    * `answer_value`
+    * `answer_reasoning`
+    * `url` (taking the first URL if a list was present)
+    * `bbb_rating` (if present within a nested 'answer_value' dictionary)
+3.  **Creating New Columns:** The extracted information was used to create new columns in the DataFrame: 'AnswerValue', 'AnswerReasoning', 'URL', and 'BBBRating'.
+4.  **Renaming Columns (Final):** The column names were further refined to be more descriptive and without abbreviations (e.g., 'Name' to 'CompanyName', 'category' to 'Category').
+5.  **Saving Parsed Data:** The DataFrame with the parsed columns was saved to a new CSV file (`llm_results_parsed.csv`).
+
+### 3. Manual Accuracy Verification (External Process)
+
+1.  **Import to Spreadsheet Software:** The `llm_results_parsed.csv` file was manually imported into a spreadsheet software (e.g., Microsoft Excel).
+2.  **Manual Review:** Each record was manually reviewed to assess the accuracy of the LLM's 'AnswerValue' and 'AnswerReasoning'.
+3.  **Creating Verification Columns:** Two new columns were manually created and populated:
+    * **'Accurate'**: A binary indicator (1 for accurate, 0 for inaccurate).
+    * **'Verifier Finding'**: A text field to record any specific findings or reasons for inaccuracy identified during the review.
+4.  **Saving Verified Data:** The spreadsheet with the added 'Accurate' and 'Verifier Finding' columns was saved as a new Excel file named `LLM Returned Data Accuracy Analysis.xlsx`.
+
+### 4. Surcharge and Discount Analysis in Tableau
+
+1.  **Data Source Connection:** The `LLM Returned Data Accuracy Analysis.xlsx` file was connected as a data source in Tableau.
+2.  **Creating Binned Risk Factor Dimensions:** The continuous risk factor measures (`output_debug_sd_factor_bi`, `output_debug_sd_factor_gl`, `output_debug_sd_factor_prop`) were binned in Tableau to create categorical dimensions representing different risk levels (e.g., Low Risk, Medium Risk, High Risk). The bin sizes were determined based on the data distribution.
+3.  **Analyzing Average Total Premium by Binned Risk Factors and Segments:** Visualizations were created to analyze the average total premium (`output_premium_total_total_prem`) across different segments (like 'Category', 'insured_address_state', or 'industry code') for each bin of the risk factors.
+4.  **Identifying Segments with Potential Surcharges and Discounts:** By observing the average total premium in the lower (potential discount) and higher (potential surcharge) risk factor bins for different segments, insights were gained into which segments might be receiving more implicit surcharges or discounts. Color coding was used to enhance the visualization of premium differences.
+
+## Next Steps
+
+Further analysis could involve:
+
+* Quantifying the actual surcharge or discount amounts if the relationship between risk factors and premium adjustments can be determined.
+* Analyzing the 'Verifier Finding' column to identify common reasons for LLM inaccuracies.
+* Exploring correlations between specific data points (e.g., URL, BBB Rating) and accuracy.
 
 
 
