@@ -1,8 +1,10 @@
 # Supernova MGU Analysis
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ## Overview
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-This project focuses on the cleaning and preparation of a supernova dataset obtained by Supernova MGU. The goal is to transform the raw data into a clean and structured format suitable for creating insightful visualizations using Tableau.
+## Overview
+
+This project focuses on the cleaning and preparation of a supernova dataset obtained from Supernova MGU. The goal is to transform the raw data into a clean and structured format suitable for creating insightful visualizations using Tableau.
 
 ## Goals
 
@@ -76,15 +78,7 @@ Assumptions:
 
 Visualization for Decline analysis: Tableau.
 
--LLM Results accuracy analysis- llm_results_processed.csv
-
-1. Created new column 'Accurate', it will contain integer values, '1' for confirmation of accuracy and '0' for inaccuracy detected.
-2. Turned data into 'Table'.
-3. Deleted rows 58 - 1000.
-4. Wrapped text on column G for readability.
-5. Renamed 'Table' to 'LLM Results'.
-6. Text alignment 'Top', 'Left'.
-
+# Supernova MGU - LLM Results Analysis and Accuracy Verification
 
 Assumptions:
 
@@ -97,10 +91,6 @@ Instructions:
 
 1. Paste business name and address, look at google search results
 2. Read what the business is about, what they do, check 'data' field for matching.
-
-
-
-# Supernova MGU - LLM Results Analysis and Accuracy Verification
 
 This README outlines the steps taken to process and analyze data involving LLM-generated results for Supernova MGU. The goal was to clean the initial dataset, parse information from a specific 'data' column containing JSON, manually verify the accuracy of the LLM outputs, and finally, perform an initial analysis of surcharges and discounts.
 
@@ -129,7 +119,7 @@ This README outlines the steps taken to process and analyze data involving LLM-g
 
 ### 3. Manual Accuracy Verification (External Process)
 
-1.  **Import to Spreadsheet Software:** The `llm_results_parsed.csv` file was manually imported into a spreadsheet software (e.g., Microsoft Excel).
+1.  **Import to Spreadsheet Software (Google Sheets):** The `llm_results_parsed.csv` file was manually imported into a Google Sheets.
 2.  **Manual Review:** Each record was manually reviewed to assess the accuracy of the LLM's 'AnswerValue' and 'AnswerReasoning'.
 3.  **Creating Verification Columns:** Two new columns were manually created and populated:
     * **'Accurate'**: A binary indicator (1 for accurate, 0 for inaccurate).
@@ -145,11 +135,9 @@ This README outlines the steps taken to process and analyze data involving LLM-g
 
 ## Next Steps
 
-Further analysis could involve:
+Creating a Google Slides presentation link below:
 
-* Quantifying the actual surcharge or discount amounts if the relationship between risk factors and premium adjustments can be determined.
-* Analyzing the 'Verifier Finding' column to identify common reasons for LLM inaccuracies.
-* Exploring correlations between specific data points (e.g., URL, BBB Rating) and accuracy.
+
 
 
 
