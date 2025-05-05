@@ -2577,6 +2577,59 @@
       </table>
       <simple-id uuid='{8777B187-E6AD-4882-AA34-6236C65F0948}' />
     </worksheet>
+    <worksheet name='Surcharge and Discount Chart 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Surcharge and discount Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Supernova-no-duplicates-dataset - raw_data' name='federated.0rjc60z1ujl4d213fathc1l8ida1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rjc60z1ujl4d213fathc1l8ida1'>
+            <column aggregation='None' caption='Output Debug Sd Factor Bi (bin)' datatype='integer' name='[Output Debug Sd Factor Bi (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[output_debug_sd_factor_bi]' peg='0' size='0.2' />
+            </column>
+            <column aggregation='None' caption='Output Debug Sd Factor Gl (bin)' datatype='integer' name='[Output Debug Sd Factor Gl (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[output_debug_sd_factor_gl]' peg='0' size='0.2' />
+            </column>
+            <column aggregation='None' caption='Output Debug Sd Factor Prop (bin)' datatype='integer' name='[Output Debug Sd Factor Prop (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[output_debug_sd_factor_prop]' peg='0' size='0.2' />
+            </column>
+            <column-instance column='[output_premium_total_total_prem]' derivation='Avg' name='[avg:output_premium_total_total_prem:qk]' pivot='key' type='quantitative' />
+            <column caption='Insured Address State' datatype='string' name='[insured_address_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Output Debug Sd Factor Bi (bin)]' derivation='None' name='[none:Output Debug Sd Factor Bi (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Output Debug Sd Factor Gl (bin)]' derivation='None' name='[none:Output Debug Sd Factor Gl (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Output Debug Sd Factor Prop (bin)]' derivation='None' name='[none:Output Debug Sd Factor Prop (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[insured_address_state]' derivation='None' name='[none:insured_address_state:nk]' pivot='key' type='nominal' />
+            <column caption='Output Debug Sd Factor Bi' datatype='real' name='[output_debug_sd_factor_bi]' role='measure' type='quantitative' />
+            <column caption='Output Debug Sd Factor Gl' datatype='real' name='[output_debug_sd_factor_gl]' role='measure' type='quantitative' />
+            <column caption='Output Debug Sd Factor Prop' datatype='real' name='[output_debug_sd_factor_prop]' role='measure' type='quantitative' />
+            <column caption='Output Premium Total Total Prem' datatype='real' default-format='C1033%' name='[output_premium_total_total_prem]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Output Debug Sd Factor Bi (bin):ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rjc60z1ujl4d213fathc1l8ida1].[avg:output_premium_total_total_prem:qk]</rows>
+        <cols>([federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Output Debug Sd Factor Prop (bin):ok] / ([federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Output Debug Sd Factor Gl (bin):ok] / [federated.0rjc60z1ujl4d213fathc1l8ida1].[none:insured_address_state:nk]))</cols>
+      </table>
+      <simple-id uuid='{EFD0F985-FECA-480E-A8AB-583D550B1392}' />
+    </worksheet>
     <worksheet name='Surcharge and Discount by Industry'>
       <table>
         <view>
@@ -3153,7 +3206,7 @@
       </viewpoint>
       <simple-id uuid='{1B6C20EA-0787-4271-8CE3-2145F2608A93}' />
     </window>
-    <window class='worksheet' maximized='true' name='Surcharge and Discount by Industry' tab-color='#17927d'>
+    <window class='worksheet' name='Surcharge and Discount by Industry' tab-color='#17927d'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3192,6 +3245,46 @@
         </highlight>
       </viewpoint>
       <simple-id uuid='{26CB1404-5916-4688-8954-2D3270F206CD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Surcharge and Discount Chart 2' tab-color='#17927d'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Output Debug Sd Factor Bi (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rjc60z1ujl4d213fathc1l8ida1].[avg:output_premium_total_total_prem:qk]</field>
+            <field>[federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Category:nk]</field>
+            <field>[federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Output Debug Sd Factor Bi (bin):ok]</field>
+            <field>[federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Output Debug Sd Factor Gl (bin):ok]</field>
+            <field>[federated.0rjc60z1ujl4d213fathc1l8ida1].[none:Output Debug Sd Factor Prop (bin):ok]</field>
+            <field>[federated.0rjc60z1ujl4d213fathc1l8ida1].[none:insured_address_state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{48E1A952-9AF7-46D8-AC63-1E4669B2FDA9}' />
     </window>
   </windows>
   <thumbnails>
@@ -5265,6 +5358,127 @@
       7LVZVN/H0Ip6rY0Z4CA8DLtUyiW6fS4ik8nQajTv+cNjz0ixSNBuE/a5DcpvEEsXuNtniBwD
       CKvJN4CwmgRAWE0CIKx049plduptuRAm7LS0tsr88pZ8Awg7Lc9dwonF5CyQsFOr1UIpJQEQ
       dvs/wzTyXJhpATMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Surcharge and Discount Chart 2' width='192'>
+      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
+      Rfv/tWrDXUkXzQEAAAAASUVORK5CYII=
     </thumbnail>
     <thumbnail height='192' name='Surcharge and Discount by Industry' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
